@@ -1,0 +1,39 @@
+{% comment %} {% load static %} {% endcomment %}
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Face Login</title></head>
+    {% comment %} <meta charset="UTF-8"> {% endcomment %}
+
+<body>
+<h1>This is home page</h1>
+<p><a href="{% url 'register' %}">Register</a></p> <br>
+
+<p><a href="{% url 'login' %}">Login</a></p> <br>
+
+</body>
+
+{% comment %} <video autoplay muted loop>
+    <source src="{% static '1.mp4' %}">
+</video>
+</html> {% endcomment %}
+
+<style>
+    {% comment %} video{
+        position: fixed;
+        z-index: -1;
+        right:0px;
+        height: 115%;
+        bottom:0px;
+    } {% endcomment %}
+    body{
+        {% comment %} color:#fff; {% endcomment %}
+        color: 24b681;
+        margin:20%;
+        background-color: #39f7e3;
+    }
+    a{
+        {% comment %} color:#fff; {% endcomment %}
+        color: 24b681;
+        background-color: #39f7e3;
+    }
+</style>
